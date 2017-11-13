@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DPARFILM">
+    <Key>
+      <PropertyRef Name="FILM_ID" />
+    </Key>
+    <Property Name="RECNUM" Type="Decimal" Precision="28" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FILM_TITLE" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ALPHA2" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AKA" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="DATE" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MINUTES" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="MINS2" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_T2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="COUNTRY" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="CERT" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="COL_BW" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FILM_ID" Type="Int32" Nullable="false" />
+    <Property Name="BASED_ON" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="UD" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RELEASE_TO_PRODUCT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATE_LAST_RELEASED" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STORY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ALPHA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="AGE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORIG_LANG" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SERIES" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IMAGE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="THEMES" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_CAST_ORDER" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="LAST_TRACK_ORDER" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="PROOFING_FLAG" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="THEATRICAL_FLAG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EDI_NUMBER" Type="Decimal" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="LIBRARY_TITLE" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ISAN" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IRISH_CERT" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="LIBRARY_AKA" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LIBRARY_BASED_ON" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="FILM_ID_SET" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="LIBRARY_PROOF_FLAG" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FILM_TITLE_NONENGLISH" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="AKA_TITLE_NONENGLISH" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EIDR_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EIDR_UD" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DPARFMT">
+    <Key>
+      <PropertyRef Name="CODE" />
+    </Key>
+    <Property Name="RECNUM" Type="Decimal" Precision="28" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CODE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UD" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="DPARFORM">
+    <Key>
+      <PropertyRef Name="FORMAT_ID" />
+    </Key>
+    <Property Name="RECNUM" Type="Decimal" Precision="28" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FORMAT_ID" Type="Int32" Nullable="false" />
+    <Property Name="FILM_ID" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="FORMATCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FILMCAT" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DISTCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AVAIL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RPRICE" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="DPRICE" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="RDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="WHSCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="EXCLUSIVE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BILL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BARCODE" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SOUND" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UD" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="OLDFILMCAT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROMOPRICE" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="SUPPLYCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LARGE_IMAGE" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="SMALL_IMAGE" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="DATE_CREATE" Type="DateTime" Precision="3" />
+    <Property Name="IMAGE_UD" Type="DateTime" Precision="3" />
+    <Property Name="FILMCAT_NOSPACE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LARGE_IMAGE_2" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="SMALL_IMAGE_2" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="ISAN" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="EDI_NUMBER" Type="Decimal" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="SMALL_IMAGE_UD" Type="DateTime" Precision="3" />
+    <Property Name="TEMPORARY_IMAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="BBFC_REG_NO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CERT" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="IRISH_CERT" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="EIDR_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PUBLISH_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ORIG_AVAIL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="MovieEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DPARFILMs" EntityType="Self.DPARFILM" />
+    <EntitySet Name="DPARFMTs" EntityType="Self.DPARFMT" />
+    <EntitySet Name="DPARFORMs" EntityType="Self.DPARFORM" />
+  </EntityContainer>
+</Schema>

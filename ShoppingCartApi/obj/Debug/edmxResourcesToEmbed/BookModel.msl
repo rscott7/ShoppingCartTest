@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookModelStoreContainer" CdmEntityContainer="BookEntities">
+    <EntitySetMapping Name="TRBKBIB2">
+      <EntityTypeMapping TypeName="BookModel.TRBKBIB2">
+        <MappingFragment StoreEntitySet="TRBKBIB2">
+          <ScalarProperty Name="Recnum" ColumnName="Recnum" />
+          <ScalarProperty Name="BARCODE" ColumnName="BARCODE" />
+          <ScalarProperty Name="AUTHOR_BIO" ColumnName="AUTHOR_BIO" />
+          <ScalarProperty Name="BIBLIO_NOTES" ColumnName="BIBLIO_NOTES" />
+          <ScalarProperty Name="BIC_QUAL_CODE" ColumnName="BIC_QUAL_CODE" />
+          <ScalarProperty Name="BIC_QUAL" ColumnName="BIC_QUAL" />
+          <ScalarProperty Name="BIC_SUBJ_CODE" ColumnName="BIC_SUBJ_CODE" />
+          <ScalarProperty Name="BIC_SUBJECT" ColumnName="BIC_SUBJECT" />
+          <ScalarProperty Name="CONTENTS" ColumnName="CONTENTS" />
+          <ScalarProperty Name="CONTRIBUTOR" ColumnName="CONTRIBUTOR" />
+          <ScalarProperty Name="CTITLE" ColumnName="CTITLE" />
+          <ScalarProperty Name="DESCRIP" ColumnName="DESCRIP" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="DEWEY" ColumnName="DEWEY" />
+          <ScalarProperty Name="DIMENSIONS" ColumnName="DIMENSIONS" />
+          <ScalarProperty Name="EDITION" ColumnName="EDITION" />
+          <ScalarProperty Name="FACET" ColumnName="FACET" />
+          <ScalarProperty Name="FORMAT_CODE" ColumnName="FORMAT_CODE" />
+          <ScalarProperty Name="ILLUS" ColumnName="ILLUS" />
+          <ScalarProperty Name="IMPRINT" ColumnName="IMPRINT" />
+          <ScalarProperty Name="ISBN10" ColumnName="ISBN10" />
+          <ScalarProperty Name="JACKET_L" ColumnName="JACKET_L" />
+          <ScalarProperty Name="LANGUAGE_CODE" ColumnName="LANGUAGE_CODE" />
+          <ScalarProperty Name="LC_CLASS" ColumnName="LC_CLASS" />
+          <ScalarProperty Name="LC_HEAD" ColumnName="LC_HEAD" />
+          <ScalarProperty Name="NOF_ITEMS" ColumnName="NOF_ITEMS" />
+          <ScalarProperty Name="NOF_PAGES" ColumnName="NOF_PAGES" />
+          <ScalarProperty Name="PAGE_SIZE" ColumnName="PAGE_SIZE" />
+          <ScalarProperty Name="PRIZES" ColumnName="PRIZES" />
+          <ScalarProperty Name="PRIZE_FLAG" ColumnName="PRIZE_FLAG" />
+          <ScalarProperty Name="PUBL_COUNTRY" ColumnName="PUBL_COUNTRY" />
+          <ScalarProperty Name="PUBL_PLACE" ColumnName="PUBL_PLACE" />
+          <ScalarProperty Name="PUBLISHER" ColumnName="PUBLISHER" />
+          <ScalarProperty Name="READERSHIP_CODE" ColumnName="READERSHIP_CODE" />
+          <ScalarProperty Name="REF_NO" ColumnName="REF_NO" />
+          <ScalarProperty Name="RELATED_IDS" ColumnName="RELATED_IDS" />
+          <ScalarProperty Name="RESPONSIBILITY" ColumnName="RESPONSIBILITY" />
+          <ScalarProperty Name="REVIEW" ColumnName="REVIEW" />
+          <ScalarProperty Name="SCREENSHOTS" ColumnName="SCREENSHOTS" />
+          <ScalarProperty Name="SERIES" ColumnName="SERIES" />
+          <ScalarProperty Name="SERIES_PART" ColumnName="SERIES_PART" />
+          <ScalarProperty Name="SIM_PUB" ColumnName="SIM_PUB" />
+          <ScalarProperty Name="SORT_DATE" ColumnName="SORT_DATE" />
+          <ScalarProperty Name="SUB_TITLE" ColumnName="SUB_TITLE" />
+          <ScalarProperty Name="TITLE_2" ColumnName="TITLE_2" />
+          <ScalarProperty Name="UK_AVAIL" ColumnName="UK_AVAIL" />
+          <ScalarProperty Name="UK_AVAIL_CODE" ColumnName="UK_AVAIL_CODE" />
+          <ScalarProperty Name="UK_VAT_PRICE" ColumnName="UK_VAT_PRICE" />
+          <ScalarProperty Name="WCO" ColumnName="WCO" />
+          <ScalarProperty Name="WEIGHT" ColumnName="WEIGHT" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+          <ScalarProperty Name="DEPTH" ColumnName="DEPTH" />
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="DATE_UPDATED" ColumnName="DATE_UPDATED" />
+          <ScalarProperty Name="NAME_AS_SUBJECT" ColumnName="NAME_AS_SUBJECT" />
+          <ScalarProperty Name="PRIMARY_BIC" ColumnName="PRIMARY_BIC" />
+          <ScalarProperty Name="UK_EX_VAT_PRICE" ColumnName="UK_EX_VAT_PRICE" />
+          <ScalarProperty Name="MARC_CONTRIBUTOR" ColumnName="MARC_CONTRIBUTOR" />
+          <ScalarProperty Name="RDA_FLAG" ColumnName="RDA_FLAG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRBKHDR2">
+      <EntityTypeMapping TypeName="BookModel.TRBKHDR2">
+        <MappingFragment StoreEntitySet="TRBKHDR2">
+          <ScalarProperty Name="Recnum" ColumnName="Recnum" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="BDZ_REF" ColumnName="BDZ_REF" />
+          <ScalarProperty Name="FORMAT_CODE" ColumnName="FORMAT_CODE" />
+          <ScalarProperty Name="IMPRINT" ColumnName="IMPRINT" />
+          <ScalarProperty Name="UK_AVAIL_CODE" ColumnName="UK_AVAIL_CODE" />
+          <ScalarProperty Name="SORT_DATE" ColumnName="SORT_DATE" />
+          <ScalarProperty Name="FACET" ColumnName="FACET" />
+          <ScalarProperty Name="UPDATED" ColumnName="UPDATED" />
+          <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+          <ScalarProperty Name="ACADEMIC_FLAG" ColumnName="ACADEMIC_FLAG" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="RERELEASE_REC" ColumnName="RERELEASE_REC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRBKIMP2">
+      <EntityTypeMapping TypeName="BookModel.TRBKIMP2">
+        <MappingFragment StoreEntitySet="TRBKIMP2">
+          <ScalarProperty Name="Recnum" ColumnName="Recnum" />
+          <ScalarProperty Name="IMPRINT" ColumnName="IMPRINT" />
+          <ScalarProperty Name="NUMBER_OF_TITLES" ColumnName="NUMBER_OF_TITLES" />
+          <ScalarProperty Name="ACADEMIC_FLAG" ColumnName="ACADEMIC_FLAG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

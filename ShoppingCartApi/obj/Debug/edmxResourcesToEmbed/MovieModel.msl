@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MovieModelStoreContainer" CdmEntityContainer="MovieEntities">
+    <EntitySetMapping Name="DPARFILMs">
+      <EntityTypeMapping TypeName="MovieModel.DPARFILM">
+        <MappingFragment StoreEntitySet="DPARFILM">
+          <ScalarProperty Name="RECNUM" ColumnName="RECNUM" />
+          <ScalarProperty Name="FILM_TITLE" ColumnName="FILM_TITLE" />
+          <ScalarProperty Name="ALPHA2" ColumnName="ALPHA2" />
+          <ScalarProperty Name="AKA" ColumnName="AKA" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="MINUTES" ColumnName="MINUTES" />
+          <ScalarProperty Name="MINS2" ColumnName="MINS2" />
+          <ScalarProperty Name="TYPE_CODE" ColumnName="TYPE_CODE" />
+          <ScalarProperty Name="SUB_T2" ColumnName="SUB_T2" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="CERT" ColumnName="CERT" />
+          <ScalarProperty Name="COL_BW" ColumnName="COL_BW" />
+          <ScalarProperty Name="FILM_ID" ColumnName="FILM_ID" />
+          <ScalarProperty Name="BASED_ON" ColumnName="BASED_ON" />
+          <ScalarProperty Name="UD" ColumnName="UD" />
+          <ScalarProperty Name="RELEASE_TO_PRODUCT" ColumnName="RELEASE_TO_PRODUCT" />
+          <ScalarProperty Name="DATE_LAST_RELEASED" ColumnName="DATE_LAST_RELEASED" />
+          <ScalarProperty Name="STORY" ColumnName="STORY" />
+          <ScalarProperty Name="ALPHA" ColumnName="ALPHA" />
+          <ScalarProperty Name="AGE" ColumnName="AGE" />
+          <ScalarProperty Name="ORIG_LANG" ColumnName="ORIG_LANG" />
+          <ScalarProperty Name="SERIES" ColumnName="SERIES" />
+          <ScalarProperty Name="IMAGE_NAME" ColumnName="IMAGE_NAME" />
+          <ScalarProperty Name="NME" ColumnName="NME" />
+          <ScalarProperty Name="THEMES" ColumnName="THEMES" />
+          <ScalarProperty Name="LAST_CAST_ORDER" ColumnName="LAST_CAST_ORDER" />
+          <ScalarProperty Name="LAST_TRACK_ORDER" ColumnName="LAST_TRACK_ORDER" />
+          <ScalarProperty Name="PROOFING_FLAG" ColumnName="PROOFING_FLAG" />
+          <ScalarProperty Name="THEATRICAL_FLAG" ColumnName="THEATRICAL_FLAG" />
+          <ScalarProperty Name="EDI_NUMBER" ColumnName="EDI_NUMBER" />
+          <ScalarProperty Name="LIBRARY_TITLE" ColumnName="LIBRARY_TITLE" />
+          <ScalarProperty Name="ISAN" ColumnName="ISAN" />
+          <ScalarProperty Name="IRISH_CERT" ColumnName="IRISH_CERT" />
+          <ScalarProperty Name="LIBRARY_AKA" ColumnName="LIBRARY_AKA" />
+          <ScalarProperty Name="LIBRARY_BASED_ON" ColumnName="LIBRARY_BASED_ON" />
+          <ScalarProperty Name="FILM_ID_SET" ColumnName="FILM_ID_SET" />
+          <ScalarProperty Name="LIBRARY_PROOF_FLAG" ColumnName="LIBRARY_PROOF_FLAG" />
+          <ScalarProperty Name="FILM_TITLE_NONENGLISH" ColumnName="FILM_TITLE_NONENGLISH" />
+          <ScalarProperty Name="AKA_TITLE_NONENGLISH" ColumnName="AKA_TITLE_NONENGLISH" />
+          <ScalarProperty Name="EIDR_NO" ColumnName="EIDR_NO" />
+          <ScalarProperty Name="EIDR_UD" ColumnName="EIDR_UD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DPARFMTs">
+      <EntityTypeMapping TypeName="MovieModel.DPARFMT">
+        <MappingFragment StoreEntitySet="DPARFMT">
+          <ScalarProperty Name="RECNUM" ColumnName="RECNUM" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UD" ColumnName="UD" />
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DPARFORMs">
+      <EntityTypeMapping TypeName="MovieModel.DPARFORM">
+        <MappingFragment StoreEntitySet="DPARFORM">
+          <ScalarProperty Name="RECNUM" ColumnName="RECNUM" />
+          <ScalarProperty Name="FORMAT_ID" ColumnName="FORMAT_ID" />
+          <ScalarProperty Name="FILM_ID" ColumnName="FILM_ID" />
+          <ScalarProperty Name="FORMATCODE" ColumnName="FORMATCODE" />
+          <ScalarProperty Name="FILMCAT" ColumnName="FILMCAT" />
+          <ScalarProperty Name="DISTCODE" ColumnName="DISTCODE" />
+          <ScalarProperty Name="AVAIL" ColumnName="AVAIL" />
+          <ScalarProperty Name="RPRICE" ColumnName="RPRICE" />
+          <ScalarProperty Name="DPRICE" ColumnName="DPRICE" />
+          <ScalarProperty Name="RDATE" ColumnName="RDATE" />
+          <ScalarProperty Name="WHSCODE" ColumnName="WHSCODE" />
+          <ScalarProperty Name="EXCLUSIVE" ColumnName="EXCLUSIVE" />
+          <ScalarProperty Name="BILL" ColumnName="BILL" />
+          <ScalarProperty Name="SS" ColumnName="SS" />
+          <ScalarProperty Name="BARCODE" ColumnName="BARCODE" />
+          <ScalarProperty Name="SOUND" ColumnName="SOUND" />
+          <ScalarProperty Name="DDATE" ColumnName="DDATE" />
+          <ScalarProperty Name="UD" ColumnName="UD" />
+          <ScalarProperty Name="NME" ColumnName="NME" />
+          <ScalarProperty Name="OLDFILMCAT" ColumnName="OLDFILMCAT" />
+          <ScalarProperty Name="PROMOPRICE" ColumnName="PROMOPRICE" />
+          <ScalarProperty Name="SUPPLYCODE" ColumnName="SUPPLYCODE" />
+          <ScalarProperty Name="LARGE_IMAGE" ColumnName="LARGE_IMAGE" />
+          <ScalarProperty Name="SMALL_IMAGE" ColumnName="SMALL_IMAGE" />
+          <ScalarProperty Name="DATE_CREATE" ColumnName="DATE_CREATE" />
+          <ScalarProperty Name="IMAGE_UD" ColumnName="IMAGE_UD" />
+          <ScalarProperty Name="FILMCAT_NOSPACE" ColumnName="FILMCAT_NOSPACE" />
+          <ScalarProperty Name="LARGE_IMAGE_2" ColumnName="LARGE_IMAGE_2" />
+          <ScalarProperty Name="SMALL_IMAGE_2" ColumnName="SMALL_IMAGE_2" />
+          <ScalarProperty Name="ISAN" ColumnName="ISAN" />
+          <ScalarProperty Name="EDI_NUMBER" ColumnName="EDI_NUMBER" />
+          <ScalarProperty Name="SMALL_IMAGE_UD" ColumnName="SMALL_IMAGE_UD" />
+          <ScalarProperty Name="TEMPORARY_IMAGE" ColumnName="TEMPORARY_IMAGE" />
+          <ScalarProperty Name="BBFC_REG_NO" ColumnName="BBFC_REG_NO" />
+          <ScalarProperty Name="CERT" ColumnName="CERT" />
+          <ScalarProperty Name="IRISH_CERT" ColumnName="IRISH_CERT" />
+          <ScalarProperty Name="EIDR_NUMBER" ColumnName="EIDR_NUMBER" />
+          <ScalarProperty Name="PUBLISH_DATE" ColumnName="PUBLISH_DATE" />
+          <ScalarProperty Name="ORIG_AVAIL" ColumnName="ORIG_AVAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

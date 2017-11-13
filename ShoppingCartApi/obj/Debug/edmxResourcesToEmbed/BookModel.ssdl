@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TRBKBIB2">
+    <Key>
+      <PropertyRef Name="BARCODE" />
+    </Key>
+    <Property Name="Recnum" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BARCODE" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="AUTHOR_BIO" Type="varchar" MaxLength="4500" />
+    <Property Name="BIBLIO_NOTES" Type="varchar" MaxLength="300" />
+    <Property Name="BIC_QUAL_CODE" Type="varchar" MaxLength="115" />
+    <Property Name="BIC_QUAL" Type="varchar" MaxLength="500" />
+    <Property Name="BIC_SUBJ_CODE" Type="varchar" MaxLength="115" />
+    <Property Name="BIC_SUBJECT" Type="varchar(max)" />
+    <Property Name="CONTENTS" Type="varchar(max)" />
+    <Property Name="CONTRIBUTOR" Type="varchar" MaxLength="1000" />
+    <Property Name="CTITLE" Type="varchar" MaxLength="750" />
+    <Property Name="DESCRIP" Type="varchar(max)" />
+    <Property Name="DESCRIPTION" Type="varchar(max)" />
+    <Property Name="DEWEY" Type="varchar" MaxLength="100" />
+    <Property Name="DIMENSIONS" Type="varchar" MaxLength="50" />
+    <Property Name="EDITION" Type="varchar" MaxLength="200" />
+    <Property Name="FACET" Type="varchar" MaxLength="50" />
+    <Property Name="FORMAT_CODE" Type="varchar" MaxLength="75" />
+    <Property Name="ILLUS" Type="varchar" MaxLength="1000" />
+    <Property Name="IMPRINT" Type="varchar" MaxLength="300" />
+    <Property Name="ISBN10" Type="varchar" MaxLength="10" />
+    <Property Name="JACKET_L" Type="varchar" MaxLength="100" />
+    <Property Name="LANGUAGE_CODE" Type="varchar" MaxLength="100" />
+    <Property Name="LC_CLASS" Type="varchar" MaxLength="100" />
+    <Property Name="LC_HEAD" Type="varchar" MaxLength="500" />
+    <Property Name="NOF_ITEMS" Type="varchar" MaxLength="50" />
+    <Property Name="NOF_PAGES" Type="varchar" MaxLength="50" />
+    <Property Name="PAGE_SIZE" Type="varchar" MaxLength="25" />
+    <Property Name="PRIZES" Type="varchar" MaxLength="500" />
+    <Property Name="PRIZE_FLAG" Type="varchar" MaxLength="10" />
+    <Property Name="PUBL_COUNTRY" Type="varchar" MaxLength="50" />
+    <Property Name="PUBL_PLACE" Type="varchar" MaxLength="100" />
+    <Property Name="PUBLISHER" Type="varchar" MaxLength="100" />
+    <Property Name="READERSHIP_CODE" Type="varchar" MaxLength="1" />
+    <Property Name="REF_NO" Type="varchar" MaxLength="25" />
+    <Property Name="RELATED_IDS" Type="varchar" MaxLength="250" />
+    <Property Name="RESPONSIBILITY" Type="varchar" MaxLength="200" />
+    <Property Name="REVIEW" Type="varchar" MaxLength="5000" />
+    <Property Name="SCREENSHOTS" Type="varchar" MaxLength="1000" />
+    <Property Name="SERIES" Type="varchar" MaxLength="750" />
+    <Property Name="SERIES_PART" Type="varchar" MaxLength="20" />
+    <Property Name="SIM_PUB" Type="varchar" MaxLength="250" />
+    <Property Name="SORT_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="SUB_TITLE" Type="varchar" MaxLength="750" />
+    <Property Name="TITLE_2" Type="varchar" MaxLength="750" />
+    <Property Name="UK_AVAIL" Type="varchar" MaxLength="100" />
+    <Property Name="UK_AVAIL_CODE" Type="varchar" MaxLength="3" />
+    <Property Name="UK_VAT_PRICE" Type="varchar" MaxLength="10" />
+    <Property Name="WCO" Type="varchar" MaxLength="20" />
+    <Property Name="WEIGHT" Type="varchar" MaxLength="20" />
+    <Property Name="LENGTH" Type="varchar" MaxLength="10" />
+    <Property Name="WIDTH" Type="varchar" MaxLength="10" />
+    <Property Name="DEPTH" Type="varchar" MaxLength="10" />
+    <Property Name="DATE_CREATED" Type="datetime" />
+    <Property Name="DATE_UPDATED" Type="datetime" />
+    <Property Name="NAME_AS_SUBJECT" Type="varchar" MaxLength="750" />
+    <Property Name="PRIMARY_BIC" Type="varchar" MaxLength="10" />
+    <Property Name="UK_EX_VAT_PRICE" Type="varchar" MaxLength="10" />
+    <Property Name="MARC_CONTRIBUTOR" Type="varchar" MaxLength="1000" />
+    <Property Name="RDA_FLAG" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="TRBKHDR2">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="Recnum" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISBN" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="BDZ_REF" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FORMAT_CODE" Type="varchar" MaxLength="75" />
+    <Property Name="IMPRINT" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="UK_AVAIL_CODE" Type="varchar" MaxLength="3" />
+    <Property Name="SORT_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="FACET" Type="varchar" MaxLength="25" />
+    <Property Name="UPDATED" Type="datetime" Nullable="false" />
+    <Property Name="CREATED" Type="datetime" Nullable="false" />
+    <Property Name="ACADEMIC_FLAG" Type="varchar" MaxLength="1" />
+    <Property Name="SOURCE" Type="varchar" MaxLength="5" />
+    <Property Name="RERELEASE_REC" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TRBKIMP2">
+    <Key>
+      <PropertyRef Name="IMPRINT" />
+    </Key>
+    <Property Name="Recnum" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IMPRINT" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="NUMBER_OF_TITLES" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="ACADEMIC_FLAG" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_TRBKBIB2_TRBKHDR2">
+    <End Role="TRBKHDR2" Type="Self.TRBKHDR2" Multiplicity="1" />
+    <End Role="TRBKBIB2" Type="Self.TRBKBIB2" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TRBKHDR2">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="TRBKBIB2">
+        <PropertyRef Name="BARCODE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRBKIMP2_TRBKHDR2">
+    <End Role="TRBKIMP2" Type="Self.TRBKIMP2" Multiplicity="1" />
+    <End Role="TRBKHDR2" Type="Self.TRBKHDR2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRBKIMP2">
+        <PropertyRef Name="IMPRINT" />
+      </Principal>
+      <Dependent Role="TRBKHDR2">
+        <PropertyRef Name="IMPRINT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BookModelStoreContainer">
+    <EntitySet Name="TRBKBIB2" EntityType="Self.TRBKBIB2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRBKHDR2" EntityType="Self.TRBKHDR2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRBKIMP2" EntityType="Self.TRBKIMP2" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TRBKBIB2_TRBKHDR2" Association="Self.FK_TRBKBIB2_TRBKHDR2">
+      <End Role="TRBKHDR2" EntitySet="TRBKHDR2" />
+      <End Role="TRBKBIB2" EntitySet="TRBKBIB2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRBKIMP2_TRBKHDR2" Association="Self.FK_TRBKIMP2_TRBKHDR2">
+      <End Role="TRBKIMP2" EntitySet="TRBKIMP2" />
+      <End Role="TRBKHDR2" EntitySet="TRBKHDR2" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

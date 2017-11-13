@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TRBKBIB2">
+    <Key>
+      <PropertyRef Name="BARCODE" />
+    </Key>
+    <Property Name="Recnum" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BARCODE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AUTHOR_BIO" Type="String" MaxLength="4500" FixedLength="false" Unicode="false" />
+    <Property Name="BIBLIO_NOTES" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="BIC_QUAL_CODE" Type="String" MaxLength="115" FixedLength="false" Unicode="false" />
+    <Property Name="BIC_QUAL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="BIC_SUBJ_CODE" Type="String" MaxLength="115" FixedLength="false" Unicode="false" />
+    <Property Name="BIC_SUBJECT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CONTENTS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRIBUTOR" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CTITLE" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DEWEY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DIMENSIONS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDITION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FACET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FORMAT_CODE" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="ILLUS" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IMPRINT" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="ISBN10" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="JACKET_L" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LANGUAGE_CODE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LC_CLASS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LC_HEAD" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="NOF_ITEMS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOF_PAGES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PAGE_SIZE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PRIZES" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PRIZE_FLAG" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PUBL_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PUBL_PLACE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PUBLISHER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="READERSHIP_CODE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="REF_NO" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="RELATED_IDS" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="RESPONSIBILITY" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REVIEW" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="SCREENSHOTS" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="SERIES" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+    <Property Name="SERIES_PART" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SIM_PUB" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="SORT_DATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TITLE" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+    <Property Name="TITLE_2" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+    <Property Name="UK_AVAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UK_AVAIL_CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="UK_VAT_PRICE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="WCO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WEIGHT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LENGTH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="WIDTH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DEPTH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DATE_CREATED" Type="DateTime" Precision="3" />
+    <Property Name="DATE_UPDATED" Type="DateTime" Precision="3" />
+    <Property Name="NAME_AS_SUBJECT" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_BIC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UK_EX_VAT_PRICE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MARC_CONTRIBUTOR" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="RDA_FLAG" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TRBKHDR2" Relationship="Self.FK_TRBKBIB2_TRBKHDR2" FromRole="TRBKBIB2" ToRole="TRBKHDR2" />
+  </EntityType>
+  <EntityType Name="TRBKHDR2">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="Recnum" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISBN" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BDZ_REF" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FORMAT_CODE" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="IMPRINT" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UK_AVAIL_CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SORT_DATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FACET" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="UPDATED" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ACADEMIC_FLAG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SOURCE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="RERELEASE_REC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TRBKBIB2" Relationship="Self.FK_TRBKBIB2_TRBKHDR2" FromRole="TRBKHDR2" ToRole="TRBKBIB2" />
+    <NavigationProperty Name="TRBKIMP2" Relationship="Self.FK_TRBKIMP2_TRBKHDR2" FromRole="TRBKHDR2" ToRole="TRBKIMP2" />
+  </EntityType>
+  <EntityType Name="TRBKIMP2">
+    <Key>
+      <PropertyRef Name="IMPRINT" />
+    </Key>
+    <Property Name="Recnum" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IMPRINT" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NUMBER_OF_TITLES" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="ACADEMIC_FLAG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TRBKHDR2" Relationship="Self.FK_TRBKIMP2_TRBKHDR2" FromRole="TRBKIMP2" ToRole="TRBKHDR2" />
+  </EntityType>
+  <Association Name="FK_TRBKBIB2_TRBKHDR2">
+    <End Role="TRBKHDR2" Type="Self.TRBKHDR2" Multiplicity="1" />
+    <End Role="TRBKBIB2" Type="Self.TRBKBIB2" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TRBKHDR2">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="TRBKBIB2">
+        <PropertyRef Name="BARCODE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRBKIMP2_TRBKHDR2">
+    <End Role="TRBKIMP2" Type="Self.TRBKIMP2" Multiplicity="1" />
+    <End Role="TRBKHDR2" Type="Self.TRBKHDR2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRBKIMP2">
+        <PropertyRef Name="IMPRINT" />
+      </Principal>
+      <Dependent Role="TRBKHDR2">
+        <PropertyRef Name="IMPRINT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BookEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TRBKBIB2" EntityType="Self.TRBKBIB2" />
+    <EntitySet Name="TRBKHDR2" EntityType="Self.TRBKHDR2" />
+    <EntitySet Name="TRBKIMP2" EntityType="Self.TRBKIMP2" />
+    <AssociationSet Name="FK_TRBKBIB2_TRBKHDR2" Association="Self.FK_TRBKBIB2_TRBKHDR2">
+      <End Role="TRBKHDR2" EntitySet="TRBKHDR2" />
+      <End Role="TRBKBIB2" EntitySet="TRBKBIB2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRBKIMP2_TRBKHDR2" Association="Self.FK_TRBKIMP2_TRBKHDR2">
+      <End Role="TRBKIMP2" EntitySet="TRBKIMP2" />
+      <End Role="TRBKHDR2" EntitySet="TRBKHDR2" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

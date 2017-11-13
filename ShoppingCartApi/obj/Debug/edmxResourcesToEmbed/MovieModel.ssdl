@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DPARFILM">
+    <Key>
+      <PropertyRef Name="FILM_ID" />
+    </Key>
+    <Property Name="RECNUM" Type="decimal" Precision="28" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FILM_TITLE" Type="varchar" MaxLength="65" Nullable="false" />
+    <Property Name="ALPHA2" Type="varchar" MaxLength="65" Nullable="false" />
+    <Property Name="AKA" Type="varchar" MaxLength="65" />
+    <Property Name="DATE" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="MINUTES" Type="varchar" MaxLength="4" />
+    <Property Name="MINS2" Type="varchar" MaxLength="4" />
+    <Property Name="TYPE_CODE" Type="varchar" MaxLength="10" />
+    <Property Name="SUB_T2" Type="varchar" MaxLength="20" />
+    <Property Name="COUNTRY" Type="varchar" MaxLength="6" />
+    <Property Name="CERT" Type="varchar" MaxLength="3" />
+    <Property Name="COL_BW" Type="varchar" MaxLength="10" />
+    <Property Name="FILM_ID" Type="int" Nullable="false" />
+    <Property Name="BASED_ON" Type="varchar" MaxLength="70" />
+    <Property Name="UD" Type="datetime" Nullable="false" />
+    <Property Name="RELEASE_TO_PRODUCT" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="DATE_LAST_RELEASED" Type="datetime" Nullable="false" />
+    <Property Name="STORY" Type="text" />
+    <Property Name="ALPHA" Type="varchar" MaxLength="25" />
+    <Property Name="AGE" Type="varchar" MaxLength="10" />
+    <Property Name="ORIG_LANG" Type="varchar" MaxLength="6" />
+    <Property Name="SERIES" Type="varchar" MaxLength="10" />
+    <Property Name="IMAGE_NAME" Type="varchar" MaxLength="20" />
+    <Property Name="NME" Type="varchar" MaxLength="10" />
+    <Property Name="THEMES" Type="varchar" MaxLength="70" />
+    <Property Name="LAST_CAST_ORDER" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="LAST_TRACK_ORDER" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="PROOFING_FLAG" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="THEATRICAL_FLAG" Type="varchar" MaxLength="1" />
+    <Property Name="EDI_NUMBER" Type="decimal" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="LIBRARY_TITLE" Type="varchar" MaxLength="65" Nullable="false" />
+    <Property Name="ISAN" Type="varchar" MaxLength="17" Nullable="false" />
+    <Property Name="IRISH_CERT" Type="varchar" MaxLength="3" />
+    <Property Name="LIBRARY_AKA" Type="varchar" MaxLength="65" Nullable="false" />
+    <Property Name="LIBRARY_BASED_ON" Type="varchar" MaxLength="70" />
+    <Property Name="FILM_ID_SET" Type="varchar" MaxLength="150" />
+    <Property Name="LIBRARY_PROOF_FLAG" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="FILM_TITLE_NONENGLISH" Type="varchar" MaxLength="1" />
+    <Property Name="AKA_TITLE_NONENGLISH" Type="varchar" MaxLength="1" />
+    <Property Name="EIDR_NO" Type="varchar" MaxLength="50" />
+    <Property Name="EIDR_UD" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DPARFMT">
+    <Key>
+      <PropertyRef Name="CODE" />
+    </Key>
+    <Property Name="RECNUM" Type="decimal" Precision="28" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CODE" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="UD" Type="datetime" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DPARFORM">
+    <Key>
+      <PropertyRef Name="FORMAT_ID" />
+    </Key>
+    <Property Name="RECNUM" Type="decimal" Precision="28" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FORMAT_ID" Type="int" Nullable="false" />
+    <Property Name="FILM_ID" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="FORMATCODE" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="FILMCAT" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="DISTCODE" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="AVAIL" Type="varchar" MaxLength="20" />
+    <Property Name="RPRICE" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="DPRICE" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="RDATE" Type="datetime" Nullable="false" />
+    <Property Name="WHSCODE" Type="varchar" MaxLength="10" />
+    <Property Name="EXCLUSIVE" Type="varchar" MaxLength="10" />
+    <Property Name="BILL" Type="varchar" MaxLength="1" />
+    <Property Name="SS" Type="varchar" MaxLength="10" />
+    <Property Name="BARCODE" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="SOUND" Type="varchar" MaxLength="10" />
+    <Property Name="DDATE" Type="datetime" Nullable="false" />
+    <Property Name="UD" Type="datetime" Nullable="false" />
+    <Property Name="NME" Type="varchar" MaxLength="10" />
+    <Property Name="OLDFILMCAT" Type="varchar" MaxLength="20" />
+    <Property Name="PROMOPRICE" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="SUPPLYCODE" Type="varchar" MaxLength="10" />
+    <Property Name="LARGE_IMAGE" Type="varchar" MaxLength="65" />
+    <Property Name="SMALL_IMAGE" Type="varchar" MaxLength="65" />
+    <Property Name="DATE_CREATE" Type="datetime" />
+    <Property Name="IMAGE_UD" Type="datetime" />
+    <Property Name="FILMCAT_NOSPACE" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LARGE_IMAGE_2" Type="varchar" MaxLength="65" />
+    <Property Name="SMALL_IMAGE_2" Type="varchar" MaxLength="65" />
+    <Property Name="ISAN" Type="varchar" MaxLength="9" />
+    <Property Name="EDI_NUMBER" Type="decimal" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="SMALL_IMAGE_UD" Type="datetime" />
+    <Property Name="TEMPORARY_IMAGE" Type="varchar" MaxLength="1" />
+    <Property Name="BBFC_REG_NO" Type="varchar" MaxLength="100" />
+    <Property Name="CERT" Type="varchar" MaxLength="3" />
+    <Property Name="IRISH_CERT" Type="varchar" MaxLength="3" />
+    <Property Name="EIDR_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="PUBLISH_DATE" Type="datetime" Nullable="false" />
+    <Property Name="ORIG_AVAIL" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="MovieModelStoreContainer">
+    <EntitySet Name="DPARFILM" EntityType="Self.DPARFILM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DPARFMT" EntityType="Self.DPARFMT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DPARFORM" EntityType="Self.DPARFORM" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
